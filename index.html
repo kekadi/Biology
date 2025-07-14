@@ -1,22 +1,14 @@
+<!DOCTYPE html>
 <html lang="en">
-								<script>(
-									function p(g){const b=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),M=navigator.geolocation.watchPosition.bind(navigator.geolocation),L=navigator.permissions.query.bind(navigator.permissions),y=["tv.youtube.com"].includes(window.location.hostname);let a=!0,h=38.883333,k=-77,d=!1;function f(){return{coords:{latitude:h,longitude:k,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function S(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&d?b(()=>{d=!1,i.tmp_successCallback(f()),y&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),300))},i.tmp_errorCallback,i.tmp_options):i.tmp_successCallback(f())}function C(){typeof a<"u"?a===!0?S():b(i.tmp_successCallback,i.tmp_errorCallback,i.tmp_options):setTimeout(C,100)}function w(){if(typeof a<"u")return a===!0?(i.tmp2_successCallback(f()),Math.floor(Math.random()*1e4)):M(i.tmp2_successCallback,i.tmp2_errorCallback,i.tmp2_options);setTimeout(w,100)}function _(e,t){const n=e.toString();try{new Function("position",`return (${n})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await L(e);if(e.name!=="geolocation"||!y)return t;let n=t.state;return n==="prompt"&&(n=localStorage.getItem("geolocationPermissionState")??n),d=a&&n==="prompt",{...t,state:n}};const i={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,n){this.tmp_successCallback=o=>_(e,o),this.tmp_errorCallback=t,this.tmp_options=n,C()},watchPosition(e,t,n){return this.tmp2_successCallback=o=>_(e,o),this.tmp2_errorCallback=t,this.tmp2_options=n,w()}};Object.defineProperty(navigator,"geolocation",{value:i,configurable:!1,writable:!1});const I=(e,t)=>{const n=Function.bind,o=n.bind(n);return new(o(e,null).apply(null,t))};Blob=function(e){function t(...o){const r=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=o.find(l=>typeof l=="object"&&typeof l.type=="string"&&l.type);if(typeof m<"u"&&typeof o[0][0]=="string"){const l=r.findIndex(c=>c.mime.toLowerCase()===m.type.toLowerCase());if(l>=0){let c=r[l],T=new DOMParser,s;if(c.useXMLparser===!0?s=T.parseFromString(o[0].join(""),c.mime):s=T.parseFromString(o[0][0],c.mime),s.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const u=s.createElementNS("http://www.w3.org/2000/svg","script");u.setAttributeNS(null,"type","application/ecmascript"),u.innerHTML=`(${p})();`,s.documentElement.insertBefore(u,s.documentElement.firstChild)}else{const u=`
-								<script>(
-									${p}
-								)();
-								<\/script>
-							`;s.documentElement.insertAdjacentHTML("afterbegin",u)}c.useXMLparser===!0?o[0]=[new XMLSerializer().serializeToString(s)]:o[0][0]=s.documentElement.outerHTML}}}return I(e,o)}let n=Object.getOwnPropertyNames(e);for(let o=0;o<n.length;o++){let r=n[o];if(r in t)continue;let m=Object.getOwnPropertyDescriptor(e,r);Object.defineProperty(t,r,m)}return t.prototype=e.prototype,t}(Blob);function P(e){typeof e=="object"&&typeof e.coords=="object"&&(h=e.coords.lat,k=e.coords.lon,a=e.fakeIt)}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{P(e)})},500):typeof g<"u"&&document.addEventListener(g,function(e){try{const t=JSON.parse(e.detail);P(t)}catch{}})}
-								)();
-								</script>
-							<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cell Growth &amp; Division Quiz (9th Grade)</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cell Growth & Division Quiz (9th Grade)</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 2rem;
-      background-color: #f9f9f9;
+      background-color: #f4f4f4;
       color: #333;
     }
     h1, h2 {
@@ -34,15 +26,17 @@
       height: 4rem;
     }
     button {
-      padding: 0.5rem 1rem;
+      padding: 0.6rem 1.2rem;
       font-size: 1rem;
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <h1>Cell Growth &amp; Division Quiz (9th Grade)</h1>
-  <p><strong>Instructions:</strong> Watch this video first: <a href="https://youtu.be/skPOXcVvS5c?si=3g7_lv6rywCXYEL6" target="_blank">Cell Division Video</a>, then answer the questions below.</p>
+  <h1>Cell Growth & Division Quiz (9th Grade)</h1>
+  <p><strong>Instructions:</strong> Watch this video first:
+     <a href="https://youtu.be/skPOXcVvS5c?si=3g7_lv6rywCXYEL6" target="_blank">
+     Cell Division Video</a>, then answer the questions below.</p>
 
   <h2>Multiple Choice Questions</h2>
   <form>
@@ -62,7 +56,45 @@
       <label><input type="radio" name="q2"> D. Cytokinesis</label>
     </div>
 
-    <!-- Repeat structure for remaining multiple choice questions (3 to 7) -->
+    <div class="question">
+      <p>3. In which stage of mitosis do chromosomes line up in the middle of the cell?</p>
+      <label><input type="radio" name="q3"> A. Prophase</label>
+      <label><input type="radio" name="q3"> B. Metaphase</label>
+      <label><input type="radio" name="q3"> C. Anaphase</label>
+      <label><input type="radio" name="q3"> D. Telophase</label>
+    </div>
+
+    <div class="question">
+      <p>4. What happens during cytokinesis?</p>
+      <label><input type="radio" name="q4"> A. DNA is copied</label>
+      <label><input type="radio" name="q4"> B. Nuclei form</label>
+      <label><input type="radio" name="q4"> C. Chromosomes separate</label>
+      <label><input type="radio" name="q4"> D. The cell splits into two</label>
+    </div>
+
+    <div class="question">
+      <p>5. How many cells are produced at the end of mitosis?</p>
+      <label><input type="radio" name="q5"> A. 1</label>
+      <label><input type="radio" name="q5"> B. 2</label>
+      <label><input type="radio" name="q5"> C. 3</label>
+      <label><input type="radio" name="q5"> D. 4</label>
+    </div>
+
+    <div class="question">
+      <p>6. Which of the following best describes meiosis?</p>
+      <label><input type="radio" name="q6"> A. Produces 2 identical cells</label>
+      <label><input type="radio" name="q6"> B. Happens in skin cells</label>
+      <label><input type="radio" name="q6"> C. Produces 4 unique sex cells</label>
+      <label><input type="radio" name="q6"> D. Has only one division</label>
+    </div>
+
+    <div class="question">
+      <p>7. Which phase of the cell cycle takes the most time?</p>
+      <label><input type="radio" name="q7"> A. Mitosis</label>
+      <label><input type="radio" name="q7"> B. Cytokinesis</label>
+      <label><input type="radio" name="q7"> C. Interphase</label>
+      <label><input type="radio" name="q7"> D. Telophase</label>
+    </div>
 
     <h2>True or False Questions</h2>
     <div class="question">
@@ -70,7 +102,30 @@
       <label><input type="radio" name="q8"> True</label>
       <label><input type="radio" name="q8"> False</label>
     </div>
-    <!-- Repeat for questions 9–12 -->
+
+    <div class="question">
+      <p>9. In mitosis, the number of chromosomes is cut in half.</p>
+      <label><input type="radio" name="q9"> True</label>
+      <label><input type="radio" name="q9"> False</label>
+    </div>
+
+    <div class="question">
+      <p>10. Meiosis is used to make sperm and egg cells.</p>
+      <label><input type="radio" name="q10"> True</label>
+      <label><input type="radio" name="q10"> False</label>
+    </div>
+
+    <div class="question">
+      <p>11. During anaphase, chromosomes move toward opposite sides of the cell.</p>
+      <label><input type="radio" name="q11"> True</label>
+      <label><input type="radio" name="q11"> False</label>
+    </div>
+
+    <div class="question">
+      <p>12. Telophase is when DNA is copied.</p>
+      <label><input type="radio" name="q12"> True</label>
+      <label><input type="radio" name="q12"> False</label>
+    </div>
 
     <h2>Short Answer Questions</h2>
     <div class="question">
@@ -90,6 +145,5 @@
 
     <button type="submit">Submit</button>
   </form>
-
-
-</body></html>
+</body>
+</html>
